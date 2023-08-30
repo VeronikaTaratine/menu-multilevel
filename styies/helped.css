@@ -1,0 +1,105 @@
+:root {
+  --fs-lg: 20px;
+  --fs-normal: 16px;
+  --fs-sm: 14px;
+  --fs-exsm: 12px;
+  --fs-h1: 55px;
+  --fs-h4: 24px;
+  --fs-h5: 21px;
+  --fs-h6: 18px;
+  --fs-h6-sm: 16px;
+  --lh-lg: 36px;
+  --grey-50: #efefef;
+  --blue-grey-500: #828282;
+  --pink-500: #f13c6e;
+  --grey-700: #6f4141;
+  --white-silver: #fff;
+  --white-light: #ffffff;
+  --black-dark: #000000;
+  --blue-grey-300: #c4c4c4;
+  --white-dark: #ffffff * 40%;
+  --container-width: 1100px;
+  --container-space: 25px;
+  --timing-functiom: cubic-bezier(0.28, 0.74, 0.43, 1.21;)
+  --light-blue:#29B6f6;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: var(--white-silver);
+}
+
+.container {
+  max-width: calc (var (--container-width) + var(--container-space) * 2);
+  padding: 0 var(--container-space);
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* flex utiliy */
+ .flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.margin-avto {
+  margin: 0 auto;
+}
+
+/* end flex utiliy */
+
+/* backgrounds */
+.bg-grey-50 {
+  background-color: var(--grey-50);
+}
+
+.bg-white-silver {
+  background: var(--white-silver);
+}
+
+.bg-white-light {
+  background: var(--white-light);
+}
+
+.bg-pink-500 {
+  background: var(--pink-500);
+}

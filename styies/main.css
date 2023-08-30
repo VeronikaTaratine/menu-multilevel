@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: url("./assets/icons/icons8-star-24.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #588da6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  box-shadow: 0 5px 10px;
+  color: dimgrey;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(7, 7, 112);
+  transition: 0.5s;
+}
+
+header .logo:hover {
+  transform: scale(1.2);
+}
+
+.topmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  display: inline-block;
+  color: blue;
+}
+
+.menu-item {
+  padding: 15px 30px 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submenu {
+  min-width: 200px;
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  transform-origin: 0 0;
+  transform: rotateX(-84deg);
+  transition: 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.topmenu {
+  position: relative;
+  float: left;
+}
+
+.topmenu li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0);
+}
+
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: 0.3s linear;
+}
+
+.submenu a {
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  background-color: blueviolet;
+  font-size: 16 px;
+  display: block;
+}
+
+header nav ul li a:hover {
+  background: rgb(7, 7, 112);
+  color: white;
+}
